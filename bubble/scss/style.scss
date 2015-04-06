@@ -10,11 +10,6 @@
 .bubble{
   position: absolute;
   display: table;
-  filter: url("blur.svg#goo");
-  -webkit-filter: url("#goo");
-  -moz-filter: url("#goo");
-  -o-filter: url("#goo");
-  -ms-filter: url("#goo");
   .alphabet{
     display: inline-block;
     line-height: 100px;
