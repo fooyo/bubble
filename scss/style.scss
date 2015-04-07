@@ -36,6 +36,9 @@
     opacity: 1!important;
     .more{
       -webkit-animation: blow 1s ease-in-out;
+      -moz-animation: blow 1s ease-in-out;
+      -o-animation: blow 1s ease-in-out;
+      animation: blow 1s ease-in-out;
     }
     .description{
       display: table-cell!important;
@@ -47,6 +50,9 @@
       line-height: 30px;
       color: #fff;
       -webkit-animation: blow 1s ease-in-out;
+      -moz-animation: blow 1s ease-in-out;
+      -o-animation: blow 1s ease-in-out;
+      animation: blow 1s ease-in-out;
       .name{
         font-size: 14px;
       }
@@ -61,6 +67,7 @@
       margin-left: -20px;
       margin-top: -20px;
       text-indent:-9999px;
+      mix-blend-mode: multiply;
       background-image: url("https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/t5/1117684_100000757737981_1020608394_q.jpg");
       background-size: 120px 120px;
     }
@@ -210,7 +217,7 @@
     margin-left: -40px;
     color: transparent;
   }
-  90%{
+  80%{
     color: transparent;
   }
   100% {
@@ -240,6 +247,30 @@
     margin-left:100px;
   }
 }
+
+
+@-moz-keyframes blow {
+  0% {
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    margin-top: -100px;
+    margin-left: -40px;
+    color: transparent;
+  }
+  80%{
+    color: transparent;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 1;
+    margin-top: -240px;
+    margin-left: 80px;
+    color: #fff;
+  }
+}
+
 @-o-keyframes moveclouds {
   0% {
     top: 100%;
@@ -255,5 +286,28 @@
   }
   100% {
     margin-left:100px;
+  }
+}
+
+
+@-o-keyframes blow {
+  0% {
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    margin-top: -100px;
+    margin-left: -40px;
+    color: transparent;
+  }
+  80%{
+    color: transparent;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 1;
+    margin-top: -240px;
+    margin-left: 80px;
+    color: #fff;
   }
 }
