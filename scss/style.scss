@@ -26,7 +26,7 @@
     position: absolute;
     width: 300px;
     height: 300px;
-    margin-top: -200px;
+    margin-top: -240px;
     margin-left: 80px;
     .description{
       display: none;
@@ -34,6 +34,9 @@
   }
   &:hover{
     opacity: 1!important;
+    .more{
+      -webkit-animation: blow 1s ease-in-out;
+    }
     .description{
       display: table-cell!important;
       text-align: center;
@@ -43,24 +46,23 @@
       height: 300px;
       line-height: 30px;
       color: #fff;
+      -webkit-animation: blow 1s ease-in-out;
       .name{
         font-size: 14px;
-        height: 100px; 
       }
       .detail{
-        height: 200px;
         padding: 20px;
         font-size: 12px;
       }
     }
     .alphabet{
-      width: 140px;
-      height: 140px;
-      margin-left: -40px;
-      margin-top: -40px;
+      width: 120px;
+      height: 120px;
+      margin-left: -20px;
+      margin-top: -20px;
       text-indent:-9999px;
       background-image: url("https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/t5/1117684_100000757737981_1020608394_q.jpg");
-      background-size: 140px 140px;
+      background-size: 120px 120px;
     }
     -webkit-animation-play-state: paused!important;
     -moz-animation-play-state:paused!important;
@@ -196,6 +198,28 @@
   }
   100% {
     margin-left:100px;
+  }
+}
+
+@-webkit-keyframes blow {
+  0% {
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    margin-top: -100px;
+    margin-left: -40px;
+    color: transparent;
+  }
+  90%{
+    color: transparent;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 1;
+    margin-top: -240px;
+    margin-left: 80px;
+    color: #fff;
   }
 }
 

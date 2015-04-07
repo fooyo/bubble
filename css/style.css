@@ -31,7 +31,7 @@
   position: absolute;
   width: 300px;
   height: 300px;
-  margin-top: -200px;
+  margin-top: -240px;
   margin-left: 80px;
 }
 /* line 31, ../scss/style.scss */
@@ -47,6 +47,10 @@
   animation-play-state: paused !important;
 }
 /* line 37, ../scss/style.scss */
+.bubble:hover .more {
+  -webkit-animation: blow 1s ease-in-out;
+}
+/* line 40, ../scss/style.scss */
 .bubble:hover .description {
   display: table-cell !important;
   text-align: center;
@@ -56,29 +60,28 @@
   height: 300px;
   line-height: 30px;
   color: #fff;
-}
-/* line 46, ../scss/style.scss */
-.bubble:hover .description .name {
-  font-size: 14px;
-  height: 100px;
+  -webkit-animation: blow 1s ease-in-out;
 }
 /* line 50, ../scss/style.scss */
+.bubble:hover .description .name {
+  font-size: 14px;
+}
+/* line 53, ../scss/style.scss */
 .bubble:hover .description .detail {
-  height: 200px;
   padding: 20px;
   font-size: 12px;
 }
-/* line 56, ../scss/style.scss */
+/* line 58, ../scss/style.scss */
 .bubble:hover .alphabet {
-  width: 140px;
-  height: 140px;
-  margin-left: -40px;
-  margin-top: -40px;
+  width: 120px;
+  height: 120px;
+  margin-left: -20px;
+  margin-top: -20px;
   text-indent: -9999px;
   background-image: url("https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/t5/1117684_100000757737981_1020608394_q.jpg");
-  background-size: 140px 140px;
+  background-size: 120px 120px;
 }
-/* line 70, ../scss/style.scss */
+/* line 72, ../scss/style.scss */
 .bubble.x1 {
   left: 0;
   -webkit-transform: scale(0.9);
@@ -89,12 +92,12 @@
   -moz-animation: moveclouds 15s linear infinite, sideWays 10s ease-in-out infinite alternate;
   -o-animation: moveclouds 15s linear infinite, sideWays 10s ease-in-out infinite alternate;
 }
-/* line 79, ../scss/style.scss */
+/* line 81, ../scss/style.scss */
 .bubble.x1 .alphabet,
 .bubble.x1 .description {
   background-color: #366695;
 }
-/* line 84, ../scss/style.scss */
+/* line 86, ../scss/style.scss */
 .bubble.x2 {
   left: 10%;
   -webkit-transform: scale(0.6);
@@ -105,12 +108,12 @@
   -moz-animation: moveclouds 25s linear infinite, sideWays 7s ease-in-out infinite alternate;
   -o-animation: moveclouds 25s linear infinite, sideWays 7s ease-in-out infinite alternate;
 }
-/* line 93, ../scss/style.scss */
+/* line 95, ../scss/style.scss */
 .bubble.x2 .alphabet,
 .bubble.x2 .description {
   background-color: #47dccb;
 }
-/* line 98, ../scss/style.scss */
+/* line 100, ../scss/style.scss */
 .bubble.x3 {
   left: 20%;
   -webkit-transform: scale(0.8);
@@ -121,12 +124,12 @@
   -moz-animation: moveclouds 20s linear infinite, sideWays 15s ease-in-out infinite alternate;
   -o-animation: moveclouds 20s linear infinite, sideWays 15s ease-in-out infinite alternate;
 }
-/* line 107, ../scss/style.scss */
+/* line 109, ../scss/style.scss */
 .bubble.x3 .alphabet,
 .bubble.x3 .description {
   background-color: #40abb4;
 }
-/* line 112, ../scss/style.scss */
+/* line 114, ../scss/style.scss */
 .bubble.x4 {
   left: 30%;
   -webkit-transform: scale(0.75);
@@ -137,12 +140,12 @@
   -moz-animation: moveclouds 18s linear infinite, sideWays 20s ease-in-out infinite alternate;
   -o-animation: moveclouds 18s linear infinite, sideWays 20s ease-in-out infinite alternate;
 }
-/* line 121, ../scss/style.scss */
+/* line 123, ../scss/style.scss */
 .bubble.x4 .alphabet,
 .bubble.x4 .description {
   background-color: #95f4e9;
 }
-/* line 126, ../scss/style.scss */
+/* line 128, ../scss/style.scss */
 .bubble.x5 {
   left: 40%;
   -webkit-transform: scale(0.8);
@@ -153,12 +156,12 @@
   -moz-animation: moveclouds 40s linear infinite, sideWays 12s ease-in-out infinite alternate;
   -o-animation: moveclouds 40s linear infinite, sideWays 12s ease-in-out infinite alternate;
 }
-/* line 135, ../scss/style.scss */
+/* line 137, ../scss/style.scss */
 .bubble.x5 .alphabet,
 .bubble.x5 .description {
   background-color: #40abb4;
 }
-/* line 140, ../scss/style.scss */
+/* line 142, ../scss/style.scss */
 .bubble.x6 {
   left: 50%;
   -webkit-transform: scale(0.8);
@@ -169,12 +172,12 @@
   -moz-animation: moveclouds 20s linear infinite, sideWays 8s ease-in-out infinite alternate;
   -o-animation: moveclouds 20s linear infinite, sideWays 8s ease-in-out infinite alternate;
 }
-/* line 149, ../scss/style.scss */
+/* line 151, ../scss/style.scss */
 .bubble.x6 .alphabet,
 .bubble.x6 .description {
   background-color: #95f4e9;
 }
-/* line 154, ../scss/style.scss */
+/* line 156, ../scss/style.scss */
 .bubble.x7 {
   left: 60%;
   -webkit-transform: scale(0.8);
@@ -185,12 +188,12 @@
   -moz-animation: moveclouds 30s linear infinite, sideWays 12s ease-in-out infinite alternate;
   -o-animation: moveclouds 30s linear infinite, sideWays 12s ease-in-out infinite alternate;
 }
-/* line 163, ../scss/style.scss */
+/* line 165, ../scss/style.scss */
 .bubble.x7 .alphabet,
 .bubble.x7 .description {
   background-color: #366695;
 }
-/* line 168, ../scss/style.scss */
+/* line 170, ../scss/style.scss */
 .bubble.x8 {
   left: 70%;
   -webkit-transform: scale(0.8);
@@ -201,7 +204,7 @@
   -moz-animation: moveclouds 30s linear infinite, sideWays 20s ease-in-out infinite alternate;
   -o-animation: moveclouds 30s linear infinite, sideWays 20s ease-in-out infinite alternate;
 }
-/* line 177, ../scss/style.scss */
+/* line 179, ../scss/style.scss */
 .bubble.x8 .alphabet,
 .bubble.x8 .description {
   background-color: #95f4e9;
@@ -221,6 +224,27 @@
   }
   100% {
     margin-left: 100px;
+  }
+}
+@-webkit-keyframes blow {
+  0% {
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    margin-top: -100px;
+    margin-left: -40px;
+    color: transparent;
+  }
+  90% {
+    color: transparent;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 1;
+    margin-top: -240px;
+    margin-left: 80px;
+    color: #fff;
   }
 }
 @-moz-keyframes moveclouds {
